@@ -28,7 +28,6 @@ def buildElementBar(name,value,bar):
     for count in barN:
         cuenta+=1
         nombre=str(name)+str(bar)+str(cuenta)
-        barAdded=int(bar)+int(count)
 
         if value != 0:
             valor = eq*notes[str(cuenta)]*value*barN[int(cuenta)]
