@@ -34,69 +34,77 @@ def buildElementBar(name,value,bar):
             window.Element(nombre).Update(round(valor,2))
         else:
             window.Element(nombre).Update(value ='')
-            
+        
 # Columns layout
 
 col0 = [
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note00'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets00'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted00')],
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note01'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets01'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted01')],
-        [sg.Text('1/2:'),sg.Input([],size=(8, 3), key='note02'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='triplets02'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='dotted02')],
-        [sg.Text('1/4:'),sg.Input([],size=(8, 3), key='note03'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='triplets03'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='dotted03')],
-        [sg.Text('1/8:'),sg.Input([],size=(8, 3), key='note04'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='triplets04'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='dotted04')],
-        [sg.Text('1/16:'),sg.Input([],size=(8, 3), key='note05'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='triplets05'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='dotted05')],
-        [sg.Text('1/32:'),sg.Input([],size=(8, 3), key='note06'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='triplets06'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='dotted06')],
-        [sg.Text('1/64:'),sg.Input([],size=(8, 3), key='note07'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='triplets07'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='dotted07')
+        [sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='note00', justification='right', disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets00', justification='right',
+        disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted00', justification='right', disabled=True)],
+        [sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='note01', justification='right', disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets01', justification='right',
+        disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted01', justification='right', disabled=True)],
+        [sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='note02', justification='right', disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets02', justification='right',
+        disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted02', justification='right', disabled=True)],
+        [sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='note03', justification='right',disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets03', justification='right',
+        disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted03', justification='right', disabled=True)],
+        [sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='note04', justification='right',disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets04', justification='right',
+        disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted04', justification='right', disabled=True)],
+        [sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='note05', justification='right',disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets05', justification='right',
+        disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted05', justification='right', disabled=True)],
+        [sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='note06', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets06', justification='right',
+        disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted06', justification='right', disabled=True)],
+        [sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='note07', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets07', justification='right',
+        disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted07', justification='right', disabled=True)
         ]]
 
 
 col1 = [
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note10'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets10'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted10')],
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note11'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets11'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted11')],
-        [sg.Text('1/2:'),sg.Input([],size=(8, 3), key='note12'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='triplets12'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='dotted12')],
-        [sg.Text('1/4:'),sg.Input([],size=(8, 3), key='note13'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='triplets13'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='dotted13')],
-        [sg.Text('1/8:'),sg.Input([],size=(8, 3), key='note14'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='triplets14'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='dotted14')],
-        [sg.Text('1/16:'),sg.Input([],size=(8, 3), key='note15'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='triplets15'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='dotted15')],
-        [sg.Text('1/32:'),sg.Input([],size=(8, 3), key='note16'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='triplets16'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='dotted16')],
-        [sg.Text('1/64:'),sg.Input([],size=(8, 3), key='note17'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='triplets17'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='dotted17')
+        [sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='note10', justification='right', disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets10', justification='right', disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted10', justification='right', disabled=True)],
+        [sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='note11', justification='right', disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets11', justification='right', disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted11', justification='right', disabled=True)],
+        [sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='note12', justification='right', disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets12', justification='right', disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted12', justification='right', disabled=True)],
+        [sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='note13', justification='right', disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets13', justification='right', disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted13', justification='right', disabled=True)],
+        [sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='note14', justification='right', disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets14', justification='right', disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted14', justification='right', disabled=True)],
+        [sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='note15', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets15', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted15', justification='right', disabled=True)],
+        [sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='note16', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets16', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted16', justification='right', disabled=True)],
+        [sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='note17', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets17', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted17', justification='right', disabled=True)
         ]]
 
 col2 = [
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note20'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets20'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted20')],
-        [sg.Text('1/2:'),sg.Input([],size=(8, 3), key='note21'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='triplets21'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='dotted21')],
-        [sg.Text('1/2:'),sg.Input([],size=(8, 3), key='note22'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='triplets22'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='dotted22')],
-        [sg.Text('1/4:'),sg.Input([],size=(8, 3), key='note23'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='triplets23'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='dotted23')],
-        [sg.Text('1/8:'),sg.Input([],size=(8, 3), key='note24'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='triplets24'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='dotted24')],
-        [sg.Text('1/16:'),sg.Input([],size=(8, 3), key='note25'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='triplets25'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='dotted25')],
-        [sg.Text('1/32:'),sg.Input([],size=(8, 3), key='note26'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='triplets26'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='dotted26')],
-        [sg.Text('1/64:'),sg.Input([],size=(8, 3), key='note27'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='triplets27'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='dotted27')
+        [sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='note20', justification='right', disabled=True),sg.Text(' 1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets20', justification='right', disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted20', justification='right', disabled=True)],
+        [sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='note21', justification='right', disabled=True),sg.Text(' 1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets21', justification='right', disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted21', justification='right', disabled=True)],
+        [sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='note22', justification='right', disabled=True),sg.Text(' 1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets22', justification='right', disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted22', justification='right', disabled=True)],
+        [sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='note23', justification='right', disabled=True),sg.Text(' 1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets23', justification='right', disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted23', justification='right', disabled=True)],
+        [sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='note24', justification='right', disabled=True),sg.Text(' 1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets24', justification='right', disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted24', justification='right', disabled=True)],
+        [sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='note25', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets25', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted25', justification='right', disabled=True)],
+        [sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='note26', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets26', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted26', justification='right', disabled=True)],
+        [sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='note27', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets27', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted27', justification='right', disabled=True)
         ]]
 
 
 col3 = [
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note30'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets30'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted30')],
-        [sg.Text('1/1:'),sg.Input([],size=(8, 3), key='note31'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='triplets31'),sg.Text('1/1:'),sg.Input([],size=(8, 3), key='dotted31')],
-        [sg.Text('1/2:'),sg.Input([],size=(8, 3), key='note32'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='triplets32'),sg.Text('1/2:'),sg.Input([],size=(8, 3), key='dotted32')],
-        [sg.Text('1/4:'),sg.Input([],size=(8, 3), key='note33'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='triplets33'),sg.Text('1/4:'),sg.Input([],size=(8, 3), key='dotted33')],
-        [sg.Text('1/8:'),sg.Input([],size=(8, 3), key='note34'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='triplets34'),sg.Text('1/8:'),sg.Input([],size=(8, 3), key='dotted34')],
-        [sg.Text('1/16:'),sg.Input([],size=(8, 3), key='note35'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='triplets35'),sg.Text('1/16:'),sg.Input([],size=(8, 3), key='dotted35')],
-        [sg.Text('1/32:'),sg.Input([],size=(8, 3), key='note36'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='triplets36'),sg.Text('1/32:'),sg.Input([],size=(8, 3), key='dotted36')],
-        [sg.Text('1/64:'),sg.Input([],size=(8, 3), key='note37'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='triplets37'),sg.Text('1/64:'),sg.Input([],size=(8, 3), key='dotted37')
+        [sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='note30', justification='right', disabled=True),sg.Text(' 1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets30', justification='right', disabled=True),sg.Text('1/1:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted30',justification='right', disabled=True)],
+        [sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='note31', justification='right', disabled=True),sg.Text(' 1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets31', justification='right', disabled=True),sg.Text('1/2:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted31',justification='right', disabled=True)],
+        [sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='note32', justification='right', disabled=True),sg.Text(' 1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets32', justification='right', disabled=True),sg.Text('1/4:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted32',justification='right', disabled=True)],
+        [sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='note33', justification='right', disabled=True),sg.Text(' 1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets33', justification='right', disabled=True),sg.Text('1/8:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted33',justification='right', disabled=True)],
+        [sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='note34', justification='right', disabled=True),sg.Text(' 1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets34', justification='right', disabled=True),sg.Text('1/16:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted34',justification='right', disabled=True)],
+        [sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='note35', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets35', justification='right', disabled=True),sg.Text('1/32:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted35',justification='right', disabled=True)],
+        [sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='note36', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets36', justification='right', disabled=True),sg.Text('1/64:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted36',justification='right', disabled=True)],
+        [sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='note37', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='triplets37', justification='right', disabled=True),sg.Text('1/128:', size=(4,1)),sg.Input([],size=(8, 3), key='dotted37',justification='right', disabled=True)
         ]]
 
-tabResults1=[[sg.Text('Notes'),sg.Text('Triplets'),sg.Text('Dotted')],
+tabResults1=[[sg.Text('Notes', size=(13,1), justification='right'),sg.Text('Triplets',size=(13,1), justification='right'),sg.Text('Dotted',size=(13,1), justification='right')],
              [sg.Column(col0)]
             ]
-tabResults2=[[sg.Text('Notes'),sg.Text('Triplets'),sg.Text('Dotted')],
+tabResults2=[[sg.Text('Notes',size=(13,1), justification='right'),sg.Text('Triplets',size=(13,1), justification='right'),sg.Text('Dotted',size=(13,1), justification='right')],
              [sg.Column(col1)]
             ]
-tabResults3=[[sg.Text('Notes'),sg.Text('Triplets'),sg.Text('Dotted')],
+tabResults3=[[sg.Text('Notes',size=(13,1), justification='right'),sg.Text('Triplets',size=(13,1), justification='right'),sg.Text('Dotted',size=(13,1), justification='right')],
              [sg.Column(col2)]
             ]
-tabResults4=[[sg.Text('Notes'),sg.Text('Triplets'),sg.Text('Dotted')],
+tabResults4=[[sg.Text('Notes',size=(13,1), justification='right'),sg.Text('Triplets',size=(13,1), justification='right'),sg.Text('Dotted',size=(13,1), justification='right')],
              [sg.Column(col3)]
             ]
 
-layout = [[sg.Text('BPM'), sg.Input([],size=(20, 3), key='_bpm_',focus=True), sg.RButton('Calculate Delay Time')],
+layout = [[sg.Text('BPM'), sg.Input([],size=(20, 3), key='_bpm_',focus=True, justification='right'), sg.RButton('Calculate Delay Time',bind_return_key=True)],
           [sg.TabGroup([[sg.Tab('Results', tabResults1), sg.Tab('1 Bar Added', tabResults2), sg.Tab('2 Bars Added', tabResults3), sg.Tab('3 Bars Added', tabResults4)]])],
           [sg.Text('1,000 milliseconds (ms) = 1 second')]
           
